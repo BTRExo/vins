@@ -194,13 +194,13 @@ async def ban(bon):
     if reason:
         await man.edit(
             r"\\**#Banned_User**//"
-            f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
-            f"**User ID:** `{str(user.id)}`\n"
-            f"**Reason:** `{reason}`",
+            f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
+            f"**UserID:** `{str(user.id)}`\n"
+            f"**Alasan:** `{reason}`",
         )
     else:
         await man.edit(
-            f"\\\\**#Banned_User**//\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n**User ID:** `{user.id}`\n**Action:** `Banned User by {me.first_name}`",
+            f"\\\\**#Banned_User**//\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n**UserID:** `{user.id}`\n**Action:** `Banned User by {me.first_name}`",
         )
 
 
@@ -249,8 +249,8 @@ async def spider(spdr):
         return await man.edit("**Gagal Mute, dia adalah admin @SharingUserbot 🤪**")
     await man.edit(
         r"\\**#Muted_User**//"
-        f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
-        f"**User ID:** `{user.id}`\n"
+        f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
+        f"**UserID:** `{user.id}`\n"
         f"**Action:** `Mute by {self_user.first_name}`",
     )
     if mute(spdr.chat_id, user.id) is False:
@@ -260,15 +260,15 @@ async def spider(spdr):
         if reason:
             await man.edit(
                 r"\\**#Muted_User**//"
-                f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
-                f"**User ID:** `{user.id}`\n"
-                f"**Reason:** `{reason}`",
+                f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
+                f"**UserID:** `{user.id}`\n"
+                f"**Alasan:** `{reason}`",
             )
         else:
             await man.edit(
                 r"\\**#Muted_User**//"
-                f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
-                f"**User ID:** `{user.id}`\n"
+                f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
+                f"**UserID:** `{user.id}`\n"
                 f"**Action:** `Mute by {self_user.first_name}`",
             )
     except UserIdInvalidError:
@@ -386,15 +386,15 @@ async def gspider(gspdr):
     elif reason:
         await man.edit(
             r"\\**#GMuted_User**//"
-            f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
-            f"**User ID:** `{user.id}`\n"
-            f"**Reason:** `{reason}`",
+            f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
+            f"**UserID:** `{user.id}`\n"
+            f"**Alasan:** `{reason}`",
         )
     else:
         await man.edit(
             r"\\**#GMuted_User**//"
-            f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
-            f"**User ID:** `{user.id}`\n"
+            f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
+            f"**UserID:** `{user.id}`\n"
             f"**Action:** `Global Muted by {self_user.first_name}`",
         )
 
