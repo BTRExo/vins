@@ -193,14 +193,14 @@ async def ban(bon):
         return await edit_or_reply(bon, NO_PERM)
     if reason:
         await man.edit(
-            r"\\**#Banned_User**//"
+            r"\\**#BANNED**//"
             f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
             f"**UserID:** `{str(user.id)}`\n"
             f"**Alasan:** `{reason}`",
         )
     else:
         await man.edit(
-            f"\\\\**#Banned_User**//\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n**UserID:** `{user.id}`\n**Action:** `Banned User by {me.first_name}`",
+            f"\\\\**#BANNED**//\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n**UserID:** `{user.id}`\n**Action:** `Banned User by {me.first_name}`",
         )
 
 
@@ -248,7 +248,7 @@ async def spider(spdr):
     if user.id in WHITELIST:
         return await man.edit("**Gagal Mute, dia adalah admin @SharingUserbot 🤪**")
     await man.edit(
-        r"\\**#Muted_User**//"
+        r"\\**#MUTED**//"
         f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
         f"**UserID:** `{user.id}`\n"
         f"**Action:** `Mute by {self_user.first_name}`",
@@ -259,14 +259,14 @@ async def spider(spdr):
         await spdr.client(EditBannedRequest(spdr.chat_id, user.id, MUTE_RIGHTS))
         if reason:
             await man.edit(
-                r"\\**#Muted_User**//"
+                r"\\**#MUTED**//"
                 f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
                 f"**UserID:** `{user.id}`\n"
                 f"**Alasan:** `{reason}`",
             )
         else:
             await man.edit(
-                r"\\**#Muted_User**//"
+                r"\\**#MUTED**//"
                 f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
                 f"**UserID:** `{user.id}`\n"
                 f"**Action:** `Mute by {self_user.first_name}`",
@@ -385,14 +385,14 @@ async def gspider(gspdr):
         await edit_delete(gspdr, "**ERROR! Pengguna Sudah Dibisukan.**")
     elif reason:
         await man.edit(
-            r"\\**#GMuted_User**//"
+            r"\\**#GMUTED**//"
             f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
             f"**UserID:** `{user.id}`\n"
             f"**Alasan:** `{reason}`",
         )
     else:
         await man.edit(
-            r"\\**#GMuted_User**//"
+            r"\\**#GMUTED**//"
             f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})\n"
             f"**UserID:** `{user.id}`\n"
             f"**Action:** `Global Muted by {self_user.first_name}`",
