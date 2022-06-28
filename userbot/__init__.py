@@ -384,7 +384,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**ᴠɪɴs-ᴜsᴇʀʙᴏᴛ ⚙️ v{BOT_VER} is back up and running!**\n\n"
+        f"**𝚅𝚒𝚗𝚜𝚇𝚒𝚍 ⚙️ v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
     )
@@ -546,7 +546,7 @@ with bot:
                 result = builder.photo(
                     file=logoman,
                     link_preview=False,
-                    text=f"**✗ ᴠɪɴs-ᴜsᴇʀʙᴏᴛ Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**✗ 𝚅𝚒𝚗𝚜𝚇𝚒𝚍 Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -600,7 +600,7 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✗ ᴠɪɴs-ᴜsᴇʀʙᴏᴛ ✗",
+                    title="✗ 𝚅𝚒𝚗𝚜𝚇𝚒𝚍 ✗",
                     description="Man - UserBot | Telethon",
                     url="https://t.me/SharingUserbot",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
@@ -624,7 +624,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**✗ ᴠɪɴs-ᴜsᴇʀʙᴏᴛ Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**✗ 𝚅𝚒𝚗𝚜𝚇𝚒𝚍 Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=logoman,
