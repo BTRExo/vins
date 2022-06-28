@@ -10,10 +10,10 @@ async def usit(event):
     await edit_or_reply(
         event,
         f"**Hai {me.first_name} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.help` Atau Bisa Minta Bantuan Ke:\n"
-        f"× **Group Support :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](t.me/)\n"
-        f"× **Channel :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](t.me/NekoXidch)\n"
-        f"× **Owner Repo :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](t.me/Nekocannn)\n"
-        f"× **Repo :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](https://github.com/BTRExo/NekoXid)\n",
+        f"× **Group Support :** [ᴠɪɴs](t.me/)\n"
+        f"× **Channel :** [ᴠɪɴs](t.me/Vinsxidch)\n"
+        f"× **Owner Repo :** [ᴠɪɴs](t.me/Vinsxid)\n"
+        f"× **Repo :** [ᴠɪɴs](https://github.com/BTRExo/NekoXid)\n",
     )
 
 
@@ -21,7 +21,7 @@ async def usit(event):
 async def var(event):
     await edit_or_reply(
         event,
-        "**Daftar Lengkap Vars Dari 𝙽𝚎𝚔𝚘𝚇𝚒𝚍:** [KLIK DISINI](https://telegra.ph/List-Variabel-Heroku-untuk-Man-Userbot-09-22)",
+        "**Daftar Lengkap Vars Dari ᴠɪɴs:** [KLIK DISINI](https://telegra.ph/List-Variabel-Heroku-untuk-Man-Userbot-09-22)",
     )
 
 
@@ -29,13 +29,13 @@ CMD_HELP.update(
     {
         "helper": f"**Plugin : **`helper`\
         \n\n  •  **Syntax :** `{cmd}ihelp`\
-        \n  •  **Function : **Bantuan Untuk 𝙽𝚎𝚔𝚘𝚇𝚒𝚍.\
+        \n  •  **Function : **Bantuan Untuk ᴠɪɴs-ᴜsᴇʀʙᴏᴛ.\
         \n\n  •  **Syntax :** `{cmd}listvar`\
         \n  •  **Function : **Melihat Daftar Vars.\
         \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Melihat Repository 𝙽𝚎𝚔𝚘𝚇𝚒𝚍.\
+        \n  •  **Function : **Melihat Repository ᴠɪɴs-ᴜsᴇʀʙᴏᴛ.\
         \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Link untuk mengambil String 𝙽𝚎𝚔𝚘𝚇𝚒𝚍.\
+        \n  •  **Function : **Link untuk mengambil String ᴠɪɴs-ᴜsᴇʀʙᴏᴛ.\
     "
     }
 )
