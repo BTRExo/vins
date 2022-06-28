@@ -9,7 +9,7 @@ from userbot.utils import edit_or_reply, man_cmd
 async def _(event):
     await event.client.send_message(
         event.chat_id,
-        "**Assalamualaikum Dulu Biar Sopan**",
+        "**Assalamualaikum..**",
         reply_to=event.reply_to_msg_id,
     )
     await event.delete()
@@ -46,7 +46,7 @@ async def _(event):
     me = await event.client.get_me()
     xx = await edit_or_reply(event, f"**Haii Salken Saya {me.first_name}**")
     sleep(2)
-    await xx.edit("**Assalamualaikum**")
+    await xx.edit("**Salam kenal..**")
 
 
 @man_cmd(pattern="j(?: |$)(.*)")
