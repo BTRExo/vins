@@ -17,7 +17,7 @@ from userbot import MAN2, MAN3, MAN4, MAN5, bot, branch, tgbot
 from userbot.utils import checking
 
 MSG_ON = """
-🤖 **ᴠɪɴs Berhasil Di Aktifkan**
+🤖 **𝚅𝚒𝚗𝚜𝚇𝚒𝚍 Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}@{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
