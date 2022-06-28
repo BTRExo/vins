@@ -1,4 +1,4 @@
-# NekoXid-Userbot Telegram
+# vins-userbot Telegram
 
 
 ![](https://github.com/BTRExo/NekoXid-Userbot/blob/main/logo.jpg)
