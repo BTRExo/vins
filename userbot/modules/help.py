@@ -18,7 +18,7 @@ async def help(event):
         if args in CMD_HELP:
             await edit_or_reply(event, f"{CMD_HELP[args]}\n\n© {ch}")
         else:
-            await edit_delete(event, f"`{args}` **❌ Bukan Nama Modul yang Valid.**")
+            await edit_delete(event, f"`{args}` **Bukan Nama Modul yang Valid.**")
     else:
         user = await event.client.get_me()
         string = ""
