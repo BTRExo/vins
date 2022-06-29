@@ -34,7 +34,7 @@ else:
 
 async def autopilot():
     LOGS.info("TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA")
-    desc = "Group Log untuk Man-UserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n🤖 Powered By ~ @Nekocannn"
+    desc = "Group Log untuk Man-UserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n🤖 Powered By ~ @Vinsxid"
     try:
         grup = await bot(
             CreateChannelRequest(title="Log UserBot", about=desc, megagroup=True)
@@ -62,9 +62,9 @@ async def autobot():
     who = await bot.get_me()
     name = f"{who.first_name} Assistant Bot"
     if who.username:
-        username = f"{who.username}_ubot"
+        username = f"{who.username}Bot"
     else:
-        username = f"man{(str(who.id))[5:]}ubot"
+        username = f"man{(str(who.id))[5:]}Bot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -97,7 +97,7 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = f"man{(str(who.id))[6:]}{str(ran)}ubot"
+        username = f"man{(str(who.id))[6:]}{str(ran)}Bot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
