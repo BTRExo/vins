@@ -85,7 +85,7 @@ CMD_HELP.update(
         \n\n  •  **Syntax :** `{cmd}semangat`\
         \n  •  **Function : **Memberikan Semangat.\
         \n\n  •  **Syntax :** `{cmd}ywc`\
-        \n  •  **Function : **nMenampilkan Sama sama\
+        \n  •  **Function : **Menampilkan Sama sama\
         \n\n  •  **Syntax :** `{cmd}sayang`\
         \n  •  **Function : **Kata I Love You.\
         \n\n  •  **Syntax :** `{cmd}k`\
