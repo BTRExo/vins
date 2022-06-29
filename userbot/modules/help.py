@@ -27,7 +27,7 @@ async def help(event):
             string += f"`\t\t\t{ICON_HELP}\t\t\t"
         await edit_or_reply(
             event,
-            f"**✦ Daftar Perintah Untuk [ᴠɪɴs-ᴜsᴇʀʙᴏᴛ](https://github.com/BTRExo/Vinsxid):**\n"
+            f"**✦ Daftar Perintah Untuk [𝚅𝚒𝚗𝚜𝚇𝚒𝚍](https://github.com/BTRExo/Vinsxid):**\n"
             f"**✦ Jumlah** `{len(CMD_HELP)}` **Modules**\n"
             f"**✦ Owner:** [{user.first_name}](tg://user?id={user.id})\n\n"
             f"{ICON_HELP}   {string}"
